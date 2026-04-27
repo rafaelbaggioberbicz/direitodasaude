@@ -145,9 +145,10 @@ footer { background: var(--navy-deep); border-top: 1px solid rgba(201,168,122,0.
 
 @media (max-width: 900px) {
   nav { padding: 20px 24px; }
-  .hero { grid-template-columns: 1fr; min-height: auto; }
-  .hero-left { padding: 120px 24px 60px; }
-  .hero-right { height: 70vw; max-height: 480px; }
+  .hero { grid-template-columns: 1fr; min-height: auto; display: flex; flex-direction: column; }
+  .hero-right { order: 1; height: 70vw; max-height: 480px; }
+  .hero-left { order: 2; padding: 40px 24px 60px; }
+  .hero-badge { display: none; }
   .para-quem-inner { padding: 0 24px; }
   .para-quem-grid { grid-template-columns: 1fr; }
   .modulos-section { padding: 70px 24px; }
@@ -310,7 +311,7 @@ footer { background: var(--navy-deep); border-top: 1px solid rgba(201,168,122,0.
 
 <footer>
   <div class="footer-logo">Rafael Baggio<span>Direito da Saúde</span></div>
-  <div class="footer-copy">© 2025 Rafael Baggio · Todos os direitos reservados</div>
+  <div class="footer-copy">© 2026 Rafael Baggio · Todos os direitos reservados</div>
 </footer>
 
 <script>
